@@ -5,10 +5,19 @@
     box-sizing: border-box;
 }
 
-.container{
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#container{
     display: flex;
     flex-wrap: wrap;
     width: 600px;
+    height: 600px;
 }
 
 
