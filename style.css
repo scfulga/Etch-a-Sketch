@@ -48,3 +48,6 @@ button{
     border-radius: 25px;
 }
 
+button:hover {
+  background-color: #2D353B;
+}
