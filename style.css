@@ -5,16 +5,16 @@
 }
 
 body{
-    background-color: gray;
+    background-color: #425047;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 }
-
+ 
 #container{
-    background-color: white;
+    background-color: #f2efdf;
     display: flex;
     flex-wrap: wrap;
     width: 600px;
