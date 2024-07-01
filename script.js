@@ -3,14 +3,22 @@ const gridBtn = document.querySelector("#grid");
 let promptInput = 0;
 function createGrid(promptInput){
 
-    let widthValue = `calc(800px / ${promptInput})`;
+    let widthValue = `calc(600px / ${promptInput})`;
     let heightValue = widthValue;
 
     for(i = 0; i < (promptInput * promptInput); i++){
         let div = document.createElement("div");
-        div.setAttribute("style",   `width: ${widthValue}; height: ${heightValue}; border-color: black; border-width: 1px; border-style: solid; `);
+        div.setAttribute("style", `width: ${widthValue}; height: ${heightValue}; `);
         container.appendChild(div);
+        div.addEventListener("mouseover", () => {
+            div.style.backgroundColor = `rgb(${randomColor()} ${randomColor()} ${randomColor()})`;
+        });
     }
+}
+
+function randomColor(){
+    let randomColor = Math.floor(Math.random() * 256);
+    return randomColor;
 }
 
 
