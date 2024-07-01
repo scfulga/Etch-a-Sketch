@@ -1,18 +1,18 @@
 const container = document.querySelector("#container");
 const gridBtn = document.querySelector("#grid");
-let promptInput = 16;
+let promptInput = 0;
 function createGrid(promptInput){
 
     let widthValue = `calc(800px / ${promptInput})`;
     let heightValue = widthValue;
 
     for(i = 0; i < (promptInput * promptInput); i++){
-        let div = document.createElement("div"); 
-        div.setAttribute("style", `width: ${widthValue}; height: ${heightValue}; border-color: black; border-width: 1px; border-style: solid; `);
+        let div = document.createElement("div");
+        div.setAttribute("style",   `width: ${widthValue}; height: ${heightValue}; border-color: black; border-width: 1px; border-style: solid; `);
         container.appendChild(div);
     }
-
 }
+
 
 gridBtn.addEventListener('click', () => {
     while (container.firstChild) {
@@ -30,4 +30,4 @@ gridBtn.addEventListener('click', () => {
     }
 })
 
-createGrid();
+createGrid(16);
