@@ -30,7 +30,7 @@ body{
 }
 
 #container{
-    background-color: #f2efdf;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     width: 600px;
