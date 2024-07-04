@@ -11,7 +11,7 @@ function createGrid(promptInput){
         div.setAttribute("style", `width: ${widthValue}; height: ${heightValue}; background-color: #f2efdf;`);
         container.appendChild(div);
         div.addEventListener("mouseover", () => {
-            div.style.backgroundColor = `rgb(${randomColor()} ${randomColor()} ${randomColor()}`;
+            div.style.backgroundColor = `rgb(${randomColor()} ${randomColor()} ${randomColor()})`;
             div.style.opacity = (getComputedStyle(div).getPropertyValue("opacity") - 0.1);
         });
     }
